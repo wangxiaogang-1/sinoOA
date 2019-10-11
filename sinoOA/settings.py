@@ -25,7 +25,7 @@ SECRET_KEY = '*og9b@cjj#8t2218iz*@4-8duvw0h4e1#i%$&wl+nci6*!j!n^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'employeeManage',
     'attendanceManage',
     'authManage',
+    'positiveManage',
+    'leaveManage',
+    'emailManage',
+    'configManage',
 ]
 
 MIDDLEWARE = [
@@ -83,9 +87,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'sinooa',
-        'USER': 'sinooa',
+        'USER': 'root',
         'PASSWORD': '123456',
-        'HOST': '118.24.122.168',
+        'HOST': '192.168.43.122',
         # 'HOST': 'localhost',
         'PORT': '3306',
     }

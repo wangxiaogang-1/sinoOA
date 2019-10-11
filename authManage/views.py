@@ -17,3 +17,8 @@ def delete(request):
     id = request.GET.get('id')
     if not id:
         return Response(status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['POST'])
+def user_add(request):
+    """用户添加"""
